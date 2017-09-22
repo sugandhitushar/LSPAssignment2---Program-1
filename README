@@ -1,0 +1,25 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ make run
+
+DESCRIPTION - 
+Creates a child process and forces parent process to wait till child process completes its execution.
+
+Example -
+$ make
+gcc -c program.c
+gcc -o forknWait program.o
+
+$ make run
+./forknWait
+Parent:: pid=3925
+Parent:: Let's wait for child process to complete
+Child:: Created
+Child:: pid=3926
+Child:: Before sleep
+Child:: sleep completed
+Child:: Terminating
+Parent:: Process: 3926 terminated with status: 0
+Parent:: Terminating
